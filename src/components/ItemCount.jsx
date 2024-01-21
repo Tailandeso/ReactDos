@@ -40,7 +40,7 @@ const ItemCount = () => {
 
   return (
     <div>
-      <Button backgroundColor='#fdcb00' size='xs' onClick={restar}>
+      <Button backgroundColor='gray' size='xs' onClick={restar}>
         -
       </Button>
       <Button
@@ -50,7 +50,7 @@ const ItemCount = () => {
       >
         Agregar al carrito {contador} unidades
       </Button>
-      <Button backgroundColor='#fdcb00' size='xs' onClick={sumar}>
+      <Button backgroundColor='gray' size='xs' onClick={sumar}>
         +
       </Button>
     </div>

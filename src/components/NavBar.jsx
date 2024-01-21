@@ -26,9 +26,9 @@ const NavBar = () => {
   const navigate = useNavigate();
 
   const categories = [
-    { id: 1, name: 'Lámparas de Techo', link: '/categoria/colgantes' },
-    { id: 2, name: 'Lámparas de Pared', link: '/categoria/pared' },
-    { id: 3, name: 'Lámparas de Mesa', link: '/categoria/mesa' },
+    { id: 1, name: 'Cámaras', link: '/categoria/camara' },
+    { id: 2, name: 'Lentes', link: '/categoria/lente' },
+    { id: 3, name: 'Baterías', link: '/categoria/bateria' },
   ];
 
   const handleCategoryChange = (selectedCategory) => {
@@ -78,9 +78,9 @@ const NavBar = () => {
             as={Button}
             rightIcon={<ChevronDownIcon />}
             mt={4}
-            bg='#fdcb00' // Color de fondo
-            color='#000' // Color de texto
-            borderRadius='5px' // Radio del borde
+            bg='#fdcb00' 
+            color='#000' 
+            borderRadius='5px' 
           >
                   Todas las categorías
                 </MenuButton>
@@ -89,8 +89,8 @@ const NavBar = () => {
                                   <MenuItem
                                   key={category.id}
                                   onClick={() => handleCategoryChange(category.link)}
-                                  bg='#0f0f0fdc;' // Color de fondo de cada opción del menú
-                                  color='white' // Color de texto de cada opción del menú
+                                  bg='#0f0f0fdc;' 
+                                  color='white' 
                                   _hover={{ background: '#fdcb00', color:'black'}}
                                 >
                       {category.name}
@@ -131,7 +131,7 @@ const NavBar = () => {
         </DrawerContent>
       </Drawer>
       <Link to={"/"}>
-        <img src={"./img/amarrilloLogoTipo.png"} alt="Logo de la Tienda" className="logo-tienda" />
+        <img src={"./img/logosonyblanco.png"} alt="Logo de la Tienda" className="logo-tienda" />
       </Link>
       <Link to={"/carrito"}>
         <div className="cart-widget">

@@ -7,7 +7,7 @@ const Trolley = () => {
 
   return (
     <>
-      <Button ref={btnRef} colorScheme='teal' onClick={onOpen}>
+      <Button ref={btnRef} colorScheme='purple' onClick={onOpen}>
         Open
       </Button>
       <Drawer
@@ -19,17 +19,13 @@ const Trolley = () => {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Create your account</DrawerHeader>
-
-          <DrawerBody>
-            <Input placeholder='Type here...' />
-          </DrawerBody>
+          <DrawerHeader>Tus carrito de compras</DrawerHeader>
 
           <DrawerFooter>
             <Button variant='outline' mr={3} onClick={onClose}>
               Cancel
             </Button>
-            <Button colorScheme='blue'>Save</Button>
+            <Button colorScheme='purple'>Save</Button>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>

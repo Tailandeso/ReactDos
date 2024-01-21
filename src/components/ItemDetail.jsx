@@ -26,7 +26,7 @@ const ItemDetail = ({ producto }) => {
           <Stack spacing='3'>
             <Heading size='md'>{producto.titulo}</Heading>
             <Text>{producto.descripcion}</Text>
-            <Text color='#fdcb00' fontSize='4xl' fontWeight='bold' textShadow='1px 1px 3px rgba(0, 0, 0, 0.8)'>
+            <Text color='black' fontSize='4xl' fontWeight='bold' textShadow='1px 1px 3px rgba(0, 0, 0, 0.8)'>
               ${producto.precio}
             </Text>
           </Stack>

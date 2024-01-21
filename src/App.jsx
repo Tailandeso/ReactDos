@@ -6,10 +6,12 @@ import './components/Styles/styleGlobal.jsx';
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import Contacto from './components/Contacto';
 import Trolley from './components/Trolley';
+import { ShoppingCartProvider } from './context/shoppingCartContext.jsx';
 
 const App = () => {
   return (
     <BrowserRouter>
+    <ShoppingCartProvider>
       <NavBar />
       <div style={{ marginTop: '20px', padding: '20px', marginBottom: '20px' }}>
         <Routes>
@@ -20,8 +22,16 @@ const App = () => {
           <Route exact path='/categoria/:categoriaId' element={<ItemListContainer />}/>
         </Routes>
       </div>
+
+
+      
+
+
+      </ShoppingCartProvider>
     </BrowserRouter>
   )
 }
+
+
 
 export default App;

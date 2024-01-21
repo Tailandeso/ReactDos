@@ -4,13 +4,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #0f0f0fdc;
+    background-color: #a364175f;
     color: #fff;
     border-radius: 5px;
   }
   .cart-widget {
     cursor: pointer;
-    color: #fdcb00;
+    color: white;
   }
 
   .cart-widget{
@@ -19,6 +19,6 @@
     padding-right: 25px;
   }
   .logo-tienda {
-    width: 400px;
+    width: 50px;
     cursor: pointer;
   }

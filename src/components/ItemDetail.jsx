@@ -13,7 +13,7 @@ const ItemDetail = ({ producto }) => {
         borderRadius='lg'
         overflow='hidden'
         boxShadow='lg'
-        textAlign='center' // Cambié el color y la opacidad aquí
+        textAlign='center' 
       >
         <Image
           src={producto.img}

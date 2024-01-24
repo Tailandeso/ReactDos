@@ -13,7 +13,7 @@ const App = () => {
     <BrowserRouter>
     <ShoppingCartProvider>
       <NavBar />
-      <div style={{ marginTop: '20px', padding: '20px', marginBottom: '20px' }}>
+      <div style={{ marginTop: '25px', padding: '25px', marginBottom: '25px' }}>
         <Routes>
           <Route exact path='/' element={<ItemListContainer />}/>
           <Route exact path='/contacto' element={<Contacto />}/>
@@ -22,10 +22,6 @@ const App = () => {
           <Route exact path='/categoria/:categoriaId' element={<ItemListContainer />}/>
         </Routes>
       </div>
-
-
-      
-
 
       </ShoppingCartProvider>
     </BrowserRouter>

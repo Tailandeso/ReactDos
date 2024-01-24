@@ -29,7 +29,7 @@ const Item = ({ titulo, id, img }) => {
       <Divider />
       <Box p='6' bg='white'>
         <ButtonGroup spacing='2'>
-          <Button bg='#fdcb00' borderColor='#fdcb00'_hover={{ background: '#0f0f0fdc', color:'white'}}>
+          <Button bg='white' borderColor='white'_hover={{ background: '#a364175f', color:'black'}}>
             <Link to={`/producto/${id}`}>
             Ver Detalles
             </Link>

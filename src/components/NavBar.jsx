@@ -39,9 +39,9 @@ const NavBar = () => {
   return (
     <div className='navbar'>
       <IconButton
-        color='#fdcb00'
-        borderColor='#fdcb00'
-        size='lg'
+        color='black'
+        borderColor='black'
+        size='md'
         aria-label='Options'
         icon={<HamburgerIcon fontSize='2xl' />} 
         variant='outline'
@@ -49,8 +49,8 @@ const NavBar = () => {
       />
       <Drawer placement={'left'} onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
-        <DrawerContent bg='#0f0f0fdc' color='#fff' borderRadius='5px'>
-          <DrawerHeader borderBottomWidth='2px'>Menú</DrawerHeader>
+        <DrawerContent bg='black' color='#fff' borderRadius='10px'>
+          <DrawerHeader borderBottomWidth='5px'>Menú</DrawerHeader>
           <DrawerBody>
             <Link to={"/"}>
               <Box
@@ -61,28 +61,23 @@ const NavBar = () => {
                 py={2}
                 mb={4}
                 onClick={onClose}
-                _hover={{ background: '#fdcb00', color:'black'}}
+                _hover={{ background: 'white', color:'black'}}
               >
                 Inicio
               </Box>
             </Link>
             <Divider />
             <Center>
-              <p style={{ fontSize: '1.125rem', textAlign: 'center' }}>
-                Categorías
-              </p>
-            </Center>
-            <Center>
               <Menu>
               <MenuButton
             as={Button}
             rightIcon={<ChevronDownIcon />}
             mt={4}
-            bg='#fdcb00' 
-            color='#000' 
+            bg='white' 
+            color='black' 
             borderRadius='5px' 
           >
-                  Todas las categorías
+                  Categorías
                 </MenuButton>
                 <MenuList bg='#0f0f0fdc;' >
                   {categories.map((category) => (
@@ -109,7 +104,7 @@ const NavBar = () => {
                 py={2}
                 mb={4}
                 onClick={onClose}
-                _hover={{ background: '#fdcb00', color:'black'}}
+                _hover={{ background: 'white', color:'black'}}
               >
                 Carrito
               </Box>
@@ -122,7 +117,7 @@ const NavBar = () => {
               width="100%"
               py={2}
               onClick={onClose}
-              _hover={{ background: '#fdcb00', color:'black'}}
+              _hover={{ background: 'white', color:'black'}}
             >
               Contacto
             </Box>

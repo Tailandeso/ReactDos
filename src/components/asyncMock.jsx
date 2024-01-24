@@ -1,6 +1,4 @@
 import React from "react";
-import { ShoppingCartProvider } from '../context/ShoppingCartContext';
-
 
 
 const productos =[{ id: 1, titulo:"Sony A7R",descripcion:"este producto es expectacular",precio:"5.029.999",categoria:"camara",img:"https://arsonyb2c.vtexassets.com/arquivos/ids/361246/ILCE-7RM5-1-ImagenPrincipal.jpg?v=638025719534630000"},
